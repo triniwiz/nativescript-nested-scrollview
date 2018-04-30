@@ -13,7 +13,7 @@ tns plugin add nativescript-nested-scrollview
 
 ## Usage
 
-	```javascript
+	```xml
     <NestedScrollView backgroundColor="red">
       <StackLayout>
       <Label text="First" color="white" />
