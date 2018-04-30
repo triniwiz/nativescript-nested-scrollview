@@ -1,0 +1,83 @@
+<Page
+  xmlns="http://schemas.nativescript.org/tns.xsd" loaded="pageLoaded" class="page"
+  xmlns:ui="nativescript-nested-scrollview"
+  xmlns:lv="nativescript-ui-listview">
+  <GridLayout class="p-20">
+    <ui:NestedScrollView backgroundColor="red">
+      <StackLayout>
+      <Label text="First" color="white" />
+        <ScrollView orientation="vertical" backgroundColor="blue">
+          <Repeater items="{{ items }}">
+            <Repeater.itemsLayout>
+              <StackLayout orientation="vertical"/>
+            </Repeater.itemsLayout>
+            <Repeater.itemTemplate>
+              <StackLayout orientation="horizontal">
+                <Label text="ID " />
+                <Label text="{{ id }}" />
+              </StackLayout>
+            </Repeater.itemTemplate>
+          </Repeater>
+        </ScrollView>
+        <Label text="Second" color="white" />
+        <ScrollView orientation="vertical" backgroundColor="white">
+          <Repeater items="{{others}}">
+            <Repeater.itemsLayout>
+              <StackLayout orientation="vertical" />
+            </Repeater.itemsLayout>
+            <Repeater.itemTemplate>
+              <StackLayout orientation="horizontal">
+                <Label text="ID " />
+                <Label text="{{ id }}" />
+              </StackLayout>
+            </Repeater.itemTemplate>
+          </Repeater>
+        </ScrollView>
+        <Label text="Third" color="white" />
+        <ScrollView orientation="vertical" backgroundColor="yellow">
+          <Repeater items="{{ repeaterItems }}">
+            <Repeater.itemsLayout>
+              <StackLayout orientation="vertical" />
+            </Repeater.itemsLayout>
+            <Repeater.itemTemplate>
+              <StackLayout orientation="horizontal">
+                <Label text="ID " />
+                <Label text="{{ id }}" />
+              </StackLayout>
+            </Repeater.itemTemplate>
+          </Repeater>
+        </ScrollView>
+
+        <Label text="Fourth" color="white" />
+        <ScrollView orientation="vertical" backgroundColor="green">
+          <Repeater items="{{ otherRepeaterItems }}">
+            <Repeater.itemsLayout>
+              <StackLayout orientation="vertical" />
+            </Repeater.itemsLayout>
+            <Repeater.itemTemplate>
+              <StackLayout orientation="horizontal">
+                <Label text="ID " />
+                <Label text="{{ id }}" />
+              </StackLayout>
+            </Repeater.itemTemplate>
+          </Repeater>
+        </ScrollView>
+
+        <Label text="Fifth" color="white" />
+        <ScrollView orientation="vertical" backgroundColor="brown">
+          <Repeater items="{{ moreItems }}">
+            <Repeater.itemsLayout>
+              <StackLayout orientation="vertical" />
+            </Repeater.itemsLayout>
+            <Repeater.itemTemplate>
+              <StackLayout orientation="horizontal">
+                <Label text="ID " />
+                <Label text="{{ id }}" />
+              </StackLayout>
+            </Repeater.itemTemplate>
+          </Repeater>
+        </ScrollView>
+      </StackLayout>
+    </ui:NestedScrollView>
+  </GridLayout>
+</Page>
