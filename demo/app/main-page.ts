@@ -3,6 +3,6 @@ import * as pages from 'tns-core-modules/ui/page';
 import { HelloWorldModel } from './main-view-model';
 
 export function pageLoaded(args: observable.EventData) {
-  let page = <pages.Page>args.object;
-  page.bindingContext = new HelloWorldModel();
+    let page = <pages.Page>args.object;
+    page.bindingContext = new HelloWorldModel();
 }
