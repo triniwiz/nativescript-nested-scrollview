@@ -6,7 +6,12 @@
 
 ## Installation
 
+{N}v7+
+```bash
+ns plugin add @triniwiz/nativescript-nested-scrollview
+```
 
+v6<
 ```javascript
 tns plugin add nativescript-nested-scrollview
 ```
